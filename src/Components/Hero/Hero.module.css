@@ -1,0 +1,103 @@
+.hero {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: relative;
+  background-image: url(../../assets/luxury-perfume-bottles-on-elegant-marble-surface-w.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  gap: 20px;
+}
+
+.hero::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 0.4;
+}
+
+.heroTitle {
+  font-size: 5rem;
+  margin: 0 auto;
+  text-align: center;
+  width: 16ch;
+  color: var(--color-P1);
+  font-weight: bold;
+  z-index: 999;
+}
+
+.heroText {
+  color: white;
+  max-width: 65ch;
+  text-align: center;
+  opacity: 0.9;
+  font-family: var(--secondary);
+}
+
+.heroBtns {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroBtns button {
+  padding: 16px;
+  border-radius: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-P1);
+  font-weight: bold;
+}
+
+.shopCollection {
+  background-color: #195 !important;
+}
+
+.shopCollection:hover {
+  background-color: #196 !important;
+}
+
+.fragranceQuiz {
+  border: 2px solid white !important;
+}
+
+.fragranceQuiz:hover {
+  background-color: white;
+  color: black;
+  transition: 0.2s;
+}
+
+@media (max-width: 650px) {
+  .heroTitle {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 460px) {
+  .heroTitle {
+    font-size: 3rem;
+  }
+  .heroText {
+    max-width: 35ch;
+  }
+  .heroBtns {
+    flex-direction: column;
+  }
+  .heroBtns button{
+    width: 100%;
+  }
+}
