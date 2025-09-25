@@ -1,6 +1,5 @@
 import React from "react";
 import css from "./Hero.module.css";
-import hero from "../../assets/luxury-perfume-bottles-on-elegant-marble-surface-w.jpg";
 
 const Hero = () => {
   return (

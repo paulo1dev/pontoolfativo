@@ -1,0 +1,87 @@
+.text {
+  font-size: 1rem;
+  color: var(--color-P3);
+  font-family: var(--primary);
+  margin-top: 10px;
+}
+
+.collections {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.collectionsCards {
+  display: flex;
+  gap: 20px;
+}
+
+.cardItem {
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center;
+  align-items: center; */
+  border: 1px solid rgba(000, 00000, 000, .1);
+  border-radius: 10px;
+  background-color: #F1F1F1;
+  gap: 10px;
+  margin-top: 80px;
+  height: 550px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 120px;
+}
+
+.empty {
+  height: 10px;
+}
+
+.cardTitle {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-family: var(--primary);
+}
+
+.cardText {
+  font-family: var(--secondary);
+  font-size: .875rem;
+  max-width: 35ch;
+  opacity: 0.8;
+  margin-top: 10px;
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 30px;
+}
+
+.cardFragrances {
+  color: var(--color-P4);
+  font-weight: semibold;
+  font-size: .875rem;
+  font-family: var(--secondary);
+}
+
+.imgContainer {
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.imgContainer img {
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.cardItem:hover .imgContainer img  {
+  transform: scale(1.075);
+  transition: 0.4s;
+}
+
+.cardItem:hover {
+  transform: scale(1.010);
+  transition: 0.2s;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
